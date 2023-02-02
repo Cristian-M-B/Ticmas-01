@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    background: linear-gradient(112deg, white -25%, grey -10%, black 90%);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    list-style-type: none;
+}
+
+li {
+    padding: 15px;
+}
+
+li a {
+    color: white;
+}
+
+#icon-theme {
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+header {
+    display: grid;
+    justify-content: center;
+    gap: 20px;
+}
+
+img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+    animation: rotate 5s infinite;
+}
+
+h1,
+h2 {
+    display: flex;
+    justify-content: center;
+}
+
+#icons {
+    display: flex;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+}
+
+i {
+    color: white;
+}
+
+i:hover {
+    color: orange;
+}
+
+section {
+    margin: 50px 10px;
+}
+
+.title {
+    text-decoration: underline;
+    white-space: nowrap;
+    animation-duration: 10s;
+    animation-name: move;
+}
+
+.jobs {
+    display: grid;
+    justify-content: center;
+    gap: 25px;
+    margin: 50px;
+}
+
+.jobs p {
+    font-weight: bold;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px;
+
+}
+
+.menu {
+    cursor: pointer;
+    margin-bottom: 5px;
+    margin-left: 100%;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding: 10px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: auto;
+    box-shadow: 1px 1px whitesmoke;
+}
+
+.modal i {
+    margin-left: 95%;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.modal h3 {
+    margin-bottom: 20px; 
+    width: 22ch;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2s steps(22);
+}
+
+#technologies {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+#technologies i {
+    margin: 12px;
+}
+
+#container {
+    height: 25px;
+}
+
+#technology-name {
+    font-weight: bold;
+    text-align: center;
+}
+
+footer {
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes rotate {
+    50% {
+        transform: scaleX(-1);
+    }
+}
+
+@keyframes move {
+    from {
+        margin-left: 85%;
+    }
+
+    to {
+        margin-left: 0%;
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}

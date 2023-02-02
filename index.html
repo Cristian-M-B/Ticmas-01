@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Cristian Baronetto - CV</title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#experience">Experiencia</a></li>
+            <li><a href="#skills">Habilidades</a></li>
+        </ul>
+        <span id="icon-theme" onclick=changeTheme()></span>
+    </nav>
+    <header>
+        <img src="images/photo.png" alt="Foto de Cristian Baronetto">
+        <h1>Cristian Baronetto</h1>
+        <h2>Developer</h2>
+        <div id="icons">
+            <a href="https://api.whatsapp.com/send?phone=5491168071990" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-whatsapp fa-2x"></i>
+            </a>
+            <a href="mailto:crisbaronetto@hotmail.com">
+                <i class="fa-solid fa-envelope fa-2x"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/cristian-baronetto/" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-linkedin fa-2x"></i>
+            </a>
+            <a href="https://github.com/Cristian-M-B" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-github fa-2x"></i>
+            </a>
+        </div>
+    </header>
+    <main>
+        <section id="experience">
+            <h3 class="title">Experiencia</h3>
+            <div class="jobs">
+                <div>
+                    <div class="item">
+                        <i id="1" class="fa-solid fa-ellipsis-vertical menu" onclick=openModal(id)></i>
+                    </div>
+                    <div class="item">
+                        <i class="fa-solid fa-user-tie fa-2x"></i>
+                        <span>React Developer</span>
+                    </div>
+                    <div class="item">
+                        <i class="fa-sharp fa-solid fa-building fa-2x"></i>
+                        <span>Mercado Libre</span>
+                    </div>
+                    <div class="item">
+                        <i class="fa-regular fa-calendar fa-2x"></i>
+                        <span>Febrero 2022 - Actualidad</span>
+                    </div>
+                </div>
+                <div id="modal1" class="modal">
+                    <i id="close" class="fa-solid fa-xmark" onclick=closeModal()></i>
+                    <h3>Descripción del puesto</h3>
+                    <p>
+                        Como miembro del staff de desarrollo, mis tareas consisten en crear, testear e
+                        implementar nuevas features, como así también mantener y actualizar las existentes.
+                    </p>
+                </div>
+                <div>
+                    <div class="item">
+                        <i id="2" class="fa-solid fa-ellipsis-vertical menu" onclick=openModal(id)></i>
+                    </div>
+                    <div class="item">
+                        <i class="fa-solid fa-user-tie fa-2x"></i>
+                        <span>JavaScript Developer</span>
+                    </div>
+                    <div class="item">
+                        <i class="fa-sharp fa-solid fa-building fa-2x"></i>
+                        <span>Globant</span>
+                    </div>
+                    <div class="item">
+                        <i class="fa-regular fa-calendar fa-2x"></i>
+                        <span>Julio 2020 - Enero 2022</span>
+                    </div>
+                </div>
+                <div id="modal2" class="modal">
+                    <i id="close" class="fa-solid fa-xmark" onclick=closeModal()></i>
+                    <h3>Descripción del puesto</h3>
+                    <p>
+                        Mis tareas consistieron en crear, testear e
+                        implementar nuevas features.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="skills">
+            <h3 class="title">Habilidades</h3>
+            <div id="technologies">
+                <i id="html" class="fa-brands fa-html5 fa-5x" onmousemove=mouseMove(id) onmouseout=mouseOut()></i>
+                <i id="css" class="fa-brands fa-css3-alt fa-5x" onmousemove=mouseMove(id) onmouseout=mouseOut()></i>
+                <i id="bootstrap" class="fa-brands fa-bootstrap fa-5x" onmousemove=mouseMove(id) onmouseout=mouseOut()></i>
+                <i id="javascript" class="fa-brands fa-js fa-5x" onmousemove=mouseMove(id) onmouseout=mouseOut()></i>
+                <i id="react" class="fa-brands fa-react fa-5x" onmousemove=mouseMove(id) onmouseout=mouseOut()></i>
+                <i id="git" class="fa-brands fa-git-alt fa-5x" onmousemove=mouseMove(id) onmouseout=mouseOut()></i>
+            </div>
+            <div id="container">
+                <p id="technology-name"></p>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+    <script src="https://kit.fontawesome.com/df2c622c64.js" crossorigin="anonymous"></script>
+    <script src="js/functions.js"></script>
+</body>
+
+</html>
